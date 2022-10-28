@@ -31,6 +31,7 @@ test('test', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Continue' }).click();
   await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
+  await page.waitForTimeout(2000)
 
   await page.hover("//a[@role='button']//span[@class='title'][normalize-space()='My account']");
   await page.waitForTimeout(2000)
@@ -38,6 +39,6 @@ test('test', async ({ page }) => {
   await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/logout');
 
   await page.getByRole('link', { name: 'Continue' }).click();
-  await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=common/home');
+  await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=common/ho');
 
 });

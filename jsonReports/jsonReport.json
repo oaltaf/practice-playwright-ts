@@ -20,7 +20,7 @@
         "testDir": "/Users/apple/Documents/OAFolder/Playwright/lamdatest",
         "testIgnore": [],
         "testMatch": [
-          "tests/recorderd.test.ts"
+          "tests/basicinteractions.test.ts"
         ],
         "timeout": 30000
       }
@@ -33,7 +33,7 @@
       [
         "html",
         {
-          "open": "never"
+          "open": "always"
         }
       ],
       [
@@ -58,14 +58,14 @@
   },
   "suites": [
     {
-      "title": "tests/recorderd.test.ts",
-      "file": "tests/recorderd.test.ts",
+      "title": "tests/basicinteractions.test.ts",
+      "file": "tests/basicinteractions.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
-          "ok": false,
+          "title": "Checkbox testing ",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -77,41 +77,23 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30001,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/Users/apple/Documents/OAFolder/Playwright/lamdatest/tests/recorderd.test.ts",
-                        "column": 52,
-                        "line": 37
-                      },
-                      "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for selector \"role=link[name=\"Logout\"i]\"\n============================================================\n\n\u001b[90m   at \u001b[39mtests/recorderd.test.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mhover(\u001b[32m\"//a[@role='button']//span[@class='title'][normalize-space()='My account']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Logout'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://ecommerce-playground.lambdatest.io/index.php?route=account/logout'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Continue'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/apple/Documents/OAFolder/Playwright/lamdatest/tests/recorderd.test.ts:37:52\u001b[22m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.click at tests/recorderd.test.ts:37:52\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2381,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2022-10-24T14:03:45.227Z",
+                  "startTime": "2022-10-28T11:56:43.256Z",
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "7c31898830c59d0dbed3-b25a84f865ab2b56b881",
-          "file": "tests/recorderd.test.ts",
-          "line": 3,
-          "column": 1
+          "id": "53707f89fa4936475b86-77584159cb7963495702",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 45,
+          "column": 6
         }
       ]
     }
