@@ -2,7 +2,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/basicinteractions.test.ts"],
+  // testMatch: ["tests/basicinteractions.test.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",

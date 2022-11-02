@@ -20,7 +20,7 @@
         "testDir": "/Users/apple/Documents/OAFolder/Playwright/lamdatest",
         "testIgnore": [],
         "testMatch": [
-          "tests/basicinteractions.test.ts"
+          "**/?(*.)@(spec|test).*"
         ],
         "timeout": 30000
       }
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests/basicinteractions.test.ts",
-      "file": "tests/basicinteractions.test.ts",
+      "title": "tests/alerts.test.ts",
+      "file": "tests/alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Checkbox testing ",
+          "title": "handling alerts ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,22 +78,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2381,
+                  "duration": 7520,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2022-10-28T11:56:43.256Z",
+                  "startTime": "2022-10-28T12:15:11.938Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "53707f89fa4936475b86-77584159cb7963495702",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 45,
-          "column": 6
+          "id": "addb81fc64a6c6200bbb-238b1343516663fad481",
+          "file": "tests/alerts.test.ts",
+          "line": 4,
+          "column": 1
         }
       ]
     }
