@@ -12,3 +12,11 @@ test('handling alerts ', async({page}) => {
 
   await page.locator("button:has-text('Click Me')").nth(0).click();
 })
+
+
+test('Model Alert', async ({page}) => { 
+  await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo");
+  await page.click("//button[@data-target='#myModal']");
+  await page.click("//div[@id='myModal']//button[@type='button'][normalize-space()='Save Changes']")
+
+ })
